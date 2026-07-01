@@ -3215,6 +3215,13 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
+lucide-angular@^0.577.0:
+  version "0.577.0"
+  resolved "https://registry.yarnpkg.com/lucide-angular/-/lucide-angular-0.577.0.tgz#3eb8bfaad58e0e904f1a759ded42dc99849fe310"
+  integrity sha512-X+W7qnLDnOGKsuG7QedRSEFjLOPb4bU1oE9jZiJYHwbykkEW49g836Ma472NAQ/N4kWGY+5iEo4NvCfPjbRmZA==
+  dependencies:
+    tslib "^2.3.0"
+
 magic-string@0.30.21, magic-string@^0.30.21:
   version "0.30.21"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.21.tgz#56763ec09a0fa8091df27879fd94d19078c00d91"
@@ -3387,6 +3394,13 @@ negotiator@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-1.0.0.tgz#b6c91bb47172d69f93cfd7c357bbb529019b5f6a"
   integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
+
+ng-angular-popup@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ng-angular-popup/-/ng-angular-popup-2.1.0.tgz#64e3146bf61f145b11aa6eda329b0026c4eaa22a"
+  integrity sha512-KrywRs7EuW/cfM/csfBBczd5pYyUtLKDJChnWvMU8oDStGOh5klUyyiE09EZ7xwYf+zn0Ymp/EWIpS0Z1oxOlQ==
+  dependencies:
+    tslib "^2.3.0"
 
 node-addon-api@^6.1.0:
   version "6.1.0"

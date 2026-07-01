@@ -1,0 +1,42 @@
+<div class="fixed top-0 z-50 w-full px-4 py-3 bg-slate-800 text-white shadow-lg">
+  <nav class="container mx-auto flex items-center justify-between">
+    <a routerLink="/" class="text-xl font-bold tracking-tight">Extension Tlhareseng</a>
+
+    <div class="flex items-center gap-4">
+      <button
+        routerLink="/profile"
+        appButton
+        variant="ghost"
+        type="button"
+        class="flex items-center gap-2 text-white hover:bg-white/20 cursor-pointer p-2 hover:rounded-md"
+      >
+        <lucide-icon name="User" class="w-4 h-4" />
+        <span>Profile</span>
+      </button>
+      <button
+        appButton
+        variant="ghost"
+        type="button"
+        class="flex items-center gap-2 text-white hover:bg-white/20 cursor-pointer p-2 hover:rounded-md"
+        routerLink="/cart"
+      >
+        <lucide-icon name="FolderKanban" class="w-4 h-4 text-white" />
+        <span>Projects</span>
+        <span
+          class="relative -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-amber-500 text-xs font-medium rounded-full"
+        >
+          7
+        </span>
+      </button>
+      <button
+        appButton
+        variant="ghost"
+        type="button"
+        class="flex items-center gap-2 text-white hover:bg-white/20 cursor-pointer p-2 hover:rounded-md"
+      >
+        <lucide-icon name="LogOut" class="w-4 h-4" />
+        <span>Logout</span>
+      </button>
+    </div>
+  </nav>
+</div>
