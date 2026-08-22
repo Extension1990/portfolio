@@ -1,13 +1,32 @@
-import { NgOptimizedImage } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { LucideAngularModule } from 'lucide-angular';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
-  imports: [LucideAngularModule, NgOptimizedImage, RouterLink, RouterLinkActive],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  standalone: true,
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    NgOptimizedImage
+  ],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css',
 })
-export class Navbar {}
+export class Navbar {
+
+  mobileMenuOpen = false;
+  profileMenuOpen = false;
+
+  toggleMobileMenu(): void {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  toggleProfileMenu(): void {
+    this.profileMenuOpen = !this.profileMenuOpen;
+  }
+
+  closeMobileMenu(): void {
+    this.mobileMenuOpen = false;
+  }
+
+}
