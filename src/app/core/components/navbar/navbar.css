@@ -5,3 +5,7 @@
 .logo {
     width: 200px !important;
 }
+
+.main-menu {
+    justify-content: center;
+}

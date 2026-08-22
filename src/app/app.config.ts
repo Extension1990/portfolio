@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { LucideAngularModule, LogOut, User, ShoppingCart, FolderKanban, Github, Twitter, Mail, MapPin, Phone, ShoppingBag, Star } from 'lucide-angular';
+import { LucideAngularModule, LogOut, User, ShoppingCart, FolderKanban, Github, Twitter, Mail, MapPin, Phone, ShoppingBag, Star, ArrowRight } from 'lucide-angular';
 import { provideNgToast } from 'ng-angular-popup';
 import { importProvidersFrom } from '@angular/core';
 
@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
       minWidth: 350,
     }),
     importProvidersFrom(
-      LucideAngularModule.pick({ LogOut, User, ShoppingCart, FolderKanban, Github, Twitter, Mail, MapPin, Phone, ShoppingBag, Star })
+      LucideAngularModule.pick({ LogOut, User, ShoppingCart, FolderKanban, Github, Twitter, Mail, MapPin, Phone, ShoppingBag, Star, ArrowRight })
     )
   ]
 };
