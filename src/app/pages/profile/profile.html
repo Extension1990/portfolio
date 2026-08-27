@@ -1,10 +1,7 @@
-<div class="min-h-screen bg-gray-100">
-
-  <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-
+<!-- <div class="min-h-screen bg-gray-100"> -->
+  <main class="mx-auto">
     <!-- Profile header -->
     <section class="overflow-hidden rounded-2xl bg-white shadow-sm">
-
       <!-- Cover -->
       <div class="h-48 bg-gradient-to-r from-slate-800 to-slate-600 md:h-64">
         <!-- cover image -->
@@ -12,7 +9,6 @@
 
       <!-- Profile information -->
       <div class="relative px-6 pb-6">
-
         <!-- Avatar -->
         <div class="-mt-16 mb-4">
           <img
@@ -23,15 +19,10 @@
         </div>
 
         <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
-
           <div>
-            <h1 class="text-2xl font-bold text-gray-900">
-              Extension Tlhareseng
-            </h1>
+            <h1 class="text-2xl font-bold text-gray-900">Extension Tlhareseng</h1>
 
-            <p class="text-gray-500">
-              Frontend Developer
-            </p>
+            <p class="text-gray-500">Frontend Software Developer</p>
           </div>
 
           <button
@@ -39,102 +30,136 @@
           >
             Edit Profile
           </button>
-
         </div>
-
       </div>
 
       <!-- Tabs -->
-      <div class="flex gap-6 overflow-x-auto border-t px-6">
-
-        <a
-          class="border-b-2 border-slate-900 px-2 py-4 text-sm font-medium text-slate-900"
+      <div class="flex overflow-x-auto border-t border-gray-200">
+        <!-- About -->
+        <button
+          type="button"
+          (click)="selectTab('about')"
+          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
+          [class.text-slate-900]="activeTab === 'about'"
+          [class.text-gray-500]="activeTab !== 'about'"
         >
           About
-        </a>
 
-        <a
-          class="px-2 py-4 text-sm font-medium text-gray-500 hover:text-gray-900"
+          @if (activeTab === 'about') {
+            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
+          }
+        </button>
+
+        <!-- Timeline -->
+        <button
+          type="button"
+          (click)="selectTab('timeline')"
+          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
+          [class.text-slate-900]="activeTab === 'timeline'"
+          [class.text-gray-500]="activeTab !== 'timeline'"
         >
           Timeline
-        </a>
 
-        <a
-          class="px-2 py-4 text-sm font-medium text-gray-500 hover:text-gray-900"
+          @if (activeTab === 'timeline') {
+            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
+          }
+        </button>
+
+        <!-- Friends -->
+        <button
+          type="button"
+          (click)="selectTab('friends')"
+          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
+          [class.text-slate-900]="activeTab === 'friends'"
+          [class.text-gray-500]="activeTab !== 'friends'"
         >
           Friends
-        </a>
 
-        <a
-          class="px-2 py-4 text-sm font-medium text-gray-500 hover:text-gray-900"
+          @if (activeTab === 'friends') {
+            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
+          }
+        </button>
+
+        <!-- Photos -->
+        <button
+          type="button"
+          (click)="selectTab('photos')"
+          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
+          [class.text-slate-900]="activeTab === 'photos'"
+          [class.text-gray-500]="activeTab !== 'photos'"
         >
           Photos
-        </a>
 
+          @if (activeTab === 'photos') {
+            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
+          }
+        </button>
       </div>
-
     </section>
-
 
     <!-- Content -->
     <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-
       <!-- Left -->
-      <aside class="space-y-6">
+        <section class="lg:col-span-2 rounded-2xl bg-white p-6 shadow-sm">
+          <h2 class="text-lg font-semibold text-gray-900 shadow-sm pb-5">About</h2>
 
-        <section class="rounded-2xl bg-white p-6 shadow-sm">
+          <h2 class="text-lg font-normal text-gray-900 mt-6">Personal Information</h2>
 
-          <h2 class="text-lg font-semibold text-gray-900">
-            About
-          </h2>
-
-          <p class="mt-4 text-sm leading-6 text-gray-600">
-            Frontend developer passionate about building
-            scalable and intuitive web applications.
-          </p>
-
-        </section>
-
-
-        <section class="rounded-2xl bg-white p-6 shadow-sm">
-
-          <h2 class="text-lg font-semibold text-gray-900">
-            Skills
-          </h2>
-
-          <div class="mt-4 flex flex-wrap gap-2">
-
-            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">
-              Angular
-            </span>
-
-            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">
-              TypeScript
-            </span>
-
-            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">
-              Tailwind CSS
-            </span>
-
-            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">
-              Node.js
-            </span>
-
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap- pt-2">
+            <div class="flex flex-row mt-5 gap-4">
+                <button class="rounded-full bg-slate-200 p-4">
+                    <lucide-icon name="phone" class="size-4 fill-current text-amber-500" />
+                </button>
+                <h4 class="text-md">+2(768) 9583 - 659 <br><span class="text-gray-600 text-sm">Direct Phone Number</span></h4>
+            </div>
+            <div class="flex flex-row mt-5 gap-4">
+                <button class="rounded-full bg-slate-200 p-4">
+                    <lucide-icon name="computer" class="size-4 fill-current text-amber-500" />
+                </button>
+                <h4 class="text-md">Frontend Software Developer <br><span class="text-gray-600 text-sm">Transitioning To Full-Stack and DevOps</span></h4>
+            </div>
+            <div class="flex flex-row mt-6 gap-4">
+                <button class="rounded-full bg-slate-200 p-4">
+                    <lucide-icon name="mail" class="size-4 fill-current text-amber-500" />
+                </button>
+                <h4 class="text-md">extensiontlhareseng@gmail.com <br><span class="text-gray-600 text-sm">Work opportunites and inquiries</span></h4>
+            </div>
+            <div class="flex flex-row mt-6 gap-4">
+                <button class="rounded-full bg-slate-200 p-4">
+                    <lucide-icon name="mapPin" class="size-4 fill-current text-amber-500" />
+                </button>
+                <h4 class="text-md">4926 Hlagisa Street, Nellmapius <br><span class="text-gray-600 text-sm">Tshwane, 0122</span></h4>
+            </div>
           </div>
 
+          <h2 class="text-lg font-normal text-gray-900 mt-6">Skills</h2>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Angular 20+ </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Angular Material </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> NgRx </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> TypeScript </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> JavaScript </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Tailwind CSS </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Bootstrap </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Responsive & Mobile-First Design </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Front-End Architecture Design </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Node.js </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> MySql </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> MS Sql Server </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> MongoDB </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> RESTful API's </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> Git </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> HTML </span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm"> CSS/SCSS </span>
+          </div>
         </section>
 
-      </aside>
-
-
       <!-- Right -->
-      <section class="lg:col-span-2 space-y-6">
-
+      <section class="lg:col-span-1 space-y-6">
         <!-- Create post -->
         <div class="rounded-2xl bg-white p-6 shadow-sm">
-
           <div class="flex gap-4">
-
             <img
               src="images/profile.jpg"
               class="h-10 w-10 rounded-full object-cover"
@@ -146,46 +171,41 @@
               placeholder="What's on your mind?"
               class="flex-1 rounded-full bg-gray-100 px-5 outline-none focus:ring-2 focus:ring-slate-300"
             />
-
           </div>
-
         </div>
-
 
         <!-- Post -->
         <article class="rounded-2xl bg-white p-6 shadow-sm">
-
           <div class="flex items-center gap-3">
-
-            <img
-              src="images/profile.jpg"
-              class="h-10 w-10 rounded-full"
-              alt="Profile"
-            />
+            <img src="images/profile.jpg" class="h-10 w-10 rounded-full" alt="Profile" />
 
             <div>
-              <h3 class="font-semibold text-gray-900">
-                Extension Tlhareseng
-              </h3>
+              <h3 class="font-semibold text-gray-900">Extension Tlhareseng</h3>
 
-              <p class="text-xs text-gray-500">
-                2 hours ago
-              </p>
+              <p class="text-xs text-gray-500">2 hours ago</p>
             </div>
-
           </div>
 
           <p class="mt-5 text-sm leading-6 text-gray-700">
-            Building a new Angular application with
-            Tailwind CSS.
+            Still working on the Frontend.
           </p>
-
         </article>
+        <article class="rounded-2xl bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <img src="images/profile.jpg" class="h-10 w-10 rounded-full" alt="Profile" />
 
+            <div>
+              <h3 class="font-semibold text-gray-900">Extension Tlhareseng</h3>
+
+              <p class="text-xs text-gray-500">Yesterday - 2pm</p>
+            </div>
+          </div>
+
+          <p class="mt-5 text-sm leading-6 text-gray-700">
+            Currently building a new Angular application with Tailwind CSS.
+          </p>
+        </article>
       </section>
-
     </div>
-
   </main>
-
-</div>
+<!-- </div> -->

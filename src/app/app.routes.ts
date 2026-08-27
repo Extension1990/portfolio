@@ -7,12 +7,12 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: 'home',
         pathMatch: 'full'
       },
       {
-        path: 'dashboard',
-        loadComponent: () => import('./pages/dashboard/dashboard').then((c) => c.Dashboard),
+        path: 'home',
+        loadComponent: () => import('./pages/home/home').then((c) => c.Home),
       },
       {
         path: 'profile',

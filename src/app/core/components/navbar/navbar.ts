@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,8 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [
     RouterLink,
     RouterLinkActive,
-    NgOptimizedImage
+    NgOptimizedImage,
+    LucideAngularModule
   ],
   templateUrl: './navbar.html',
 })

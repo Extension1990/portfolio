@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-home',
   imports: [LucideAngularModule],
-  templateUrl: './dashboard.html',
-  styleUrl: './dashboard.css',
+  templateUrl: './home.html',
+  styleUrl: './home.css',
 })
-export class Dashboard {}
+export class Home {}
