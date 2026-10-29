@@ -32,69 +32,6 @@
           </button>
         </div>
       </div>
-
-      <!-- Tabs -->
-      <div class="flex overflow-x-auto border-t border-gray-200">
-        <!-- About -->
-        <button
-          type="button"
-          (click)="selectTab('about')"
-          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
-          [class.text-slate-900]="activeTab === 'about'"
-          [class.text-gray-500]="activeTab !== 'about'"
-        >
-          About
-
-          @if (activeTab === 'about') {
-            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
-          }
-        </button>
-
-        <!-- Timeline -->
-        <button
-          type="button"
-          (click)="selectTab('timeline')"
-          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
-          [class.text-slate-900]="activeTab === 'timeline'"
-          [class.text-gray-500]="activeTab !== 'timeline'"
-        >
-          Timeline
-
-          @if (activeTab === 'timeline') {
-            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
-          }
-        </button>
-
-        <!-- Friends -->
-        <button
-          type="button"
-          (click)="selectTab('friends')"
-          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
-          [class.text-slate-900]="activeTab === 'friends'"
-          [class.text-gray-500]="activeTab !== 'friends'"
-        >
-          Friends
-
-          @if (activeTab === 'friends') {
-            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
-          }
-        </button>
-
-        <!-- Photos -->
-        <button
-          type="button"
-          (click)="selectTab('photos')"
-          class="relative whitespace-nowrap px-6 py-4 text-sm font-medium transition"
-          [class.text-slate-900]="activeTab === 'photos'"
-          [class.text-gray-500]="activeTab !== 'photos'"
-        >
-          Photos
-
-          @if (activeTab === 'photos') {
-            <span class="absolute bottom-0 left-0 h-0.5 w-full bg-slate-900"></span>
-          }
-        </button>
-      </div>
     </section>
 
     <!-- Content -->
