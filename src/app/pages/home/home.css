@@ -1,0 +1,167 @@
+/* 
+:host {
+  display: block;
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm text-zinc-500 transition hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white;
+  }
+
+  .mobile-nav-link {
+    @apply flex items-center justify-between rounded-xl px-3 py-3 text-sm font-medium text-zinc-700 transition hover:bg-black/5 dark:text-zinc-300 dark:hover:bg-white/5;
+  }
+
+  .section-wrap {
+    @apply mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-28;
+  }
+
+  .section-kicker {
+    @apply mb-8 text-xs font-semibold uppercase tracking-[.25em] text-zinc-500;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold leading-tight tracking-[-.045em] sm:text-4xl lg:text-5xl;
+  }
+
+  .muted-title {
+    @apply text-zinc-400 dark:text-zinc-600;
+  }
+
+  .service-card {
+    @apply relative rounded-3xl border border-zinc-200 bg-white/70 p-6 transition hover:-translate-y-1 hover:border-zinc-300 dark:border-zinc-800 dark:bg-white/[.03] dark:hover:border-zinc-700 sm:p-8;
+  }
+
+  .service-number {
+    @apply absolute right-6 top-6 text-xs text-zinc-400;
+  }
+
+  .service-icon {
+    @apply mb-8 grid h-12 w-12 place-items-center rounded-2xl bg-zinc-100 text-xl text-zinc-800 dark:bg-white/10 dark:text-zinc-200;
+  }
+
+  .service-card h3 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+
+  .service-card p {
+    @apply mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400;
+  }
+
+  .service-tags {
+    @apply mt-6 flex flex-wrap gap-2;
+  }
+
+  .service-tags span {
+    @apply rounded-full border border-zinc-200 px-3 py-1.5 text-[10px] text-zinc-500 dark:border-zinc-700;
+  }
+
+  .project-art {
+    @apply relative min-h-56 overflow-hidden p-5 sm:min-h-64;
+    background: #e6e6e0;
+  }
+
+  .dark .project-art {
+    background: #252624;
+  }
+
+  .art-fleet {
+    background: linear-gradient(135deg, #e5e5df, #c9cac3);
+  }
+
+  .dark .art-fleet {
+    background: linear-gradient(135deg, #2c2d2a, #1b1c1a);
+  }
+
+  .art-store {
+    background: linear-gradient(135deg, #dfded8, #f0eee8);
+  }
+
+  .dark .art-store {
+    background: linear-gradient(135deg, #252623, #343530);
+  }
+
+  .art-ops {
+    background: linear-gradient(135deg, #d5d6cf, #e9e9e3);
+  }
+
+  .dark .art-ops {
+    background: linear-gradient(135deg, #30312d, #20211f);
+  }
+
+  .mock-dashboard {
+    @apply absolute bottom-5 left-5 right-5 rounded-xl border border-black/10 bg-white/80 p-3 shadow-lg shadow-black/5 dark:border-white/10 dark:bg-[#171816]/90;
+  }
+
+  .mock-topline {
+    @apply h-2 w-1/3 rounded-full bg-zinc-300 dark:bg-zinc-700;
+  }
+
+  .mock-metrics {
+    @apply mt-3 grid grid-cols-3 gap-2;
+  }
+
+  .mock-metrics i {
+    @apply h-7 rounded-md bg-zinc-200 dark:bg-zinc-800;
+  }
+
+  .mock-chart {
+    @apply mt-3 flex h-20 items-end gap-2 rounded-md bg-zinc-100 px-3 pt-3 dark:bg-zinc-900;
+  }
+
+  .mock-chart b {
+    @apply flex-1 rounded-t-sm bg-zinc-400 dark:bg-zinc-600;
+  }
+
+  .mock-chart b:nth-child(1) { height: 35%; }
+  .mock-chart b:nth-child(2) { height: 52%; }
+  .mock-chart b:nth-child(3) { height: 43%; }
+  .mock-chart b:nth-child(4) { height: 78%; }
+  .mock-chart b:nth-child(5) { height: 60%; }
+  .mock-chart b:nth-child(6) { height: 88%; }
+  .mock-chart b:nth-child(7) { height: 70%; }
+
+  .mock-store {
+    @apply absolute bottom-5 left-5 right-5 flex h-36 items-end gap-2;
+  }
+
+  .mock-product {
+    @apply h-28 flex-1 rounded-xl border border-black/10 bg-[#c6c7c0] shadow-sm dark:border-white/10 dark:bg-[#454640];
+  }
+
+  .mock-product.small {
+    @apply h-20;
+  }
+
+  .mock-product.tall {
+    @apply h-32;
+  }
+
+  .mock-ops {
+    @apply absolute bottom-5 left-5 right-5 flex h-36 overflow-hidden rounded-xl border border-black/10 bg-white/70 shadow-lg dark:border-white/10 dark:bg-[#171816]/80;
+  }
+
+  .mock-sidebar {
+    @apply w-1/4 border-r border-black/10 bg-zinc-200/70 dark:border-white/10 dark:bg-zinc-800/70;
+  }
+
+  .mock-ops-content {
+    @apply flex flex-1 flex-col gap-2 p-3;
+  }
+
+  .mock-ops-content i {
+    @apply h-3 rounded bg-zinc-200 dark:bg-zinc-800;
+  }
+
+  .mock-ops-content i:nth-child(2) {
+    @apply w-3/4;
+  }
+
+  .mock-ops-content i:nth-child(3) {
+    @apply w-1/2;
+  }
+
+  .mock-ops-content b {
+    @apply mt-1 h-12 rounded-md bg-zinc-300 dark:bg-zinc-700;
+  }
+} */
