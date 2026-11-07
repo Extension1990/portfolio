@@ -19,6 +19,9 @@ import {
   Clock,
   Bell,
   Settings,
+  Download,
+  Eye,
+  Linkedin,
 } from 'lucide-angular';
 import { provideNgToast } from 'ng-angular-popup';
 import { importProvidersFrom } from '@angular/core';
@@ -41,6 +44,7 @@ export const appConfig: ApplicationConfig = {
         ShoppingCart,
         FolderKanban,
         Github,
+        Linkedin,
         Twitter,
         Mail,
         MapPin,
@@ -52,7 +56,9 @@ export const appConfig: ApplicationConfig = {
         Computer,
         Clock,
         Bell,
-        Settings
+        Settings,
+        Download,
+        Eye
       }),
     ),
   ],
