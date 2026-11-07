@@ -53,10 +53,9 @@ export class Home implements OnInit, OnDestroy {
       technologies: ['Angular', 'FastAPI', 'PostgreSQL'],
       category: 'Dashboards',
       images: [
-        'assets/images/projects/nybble/wb-nybble.png',
-        'assets/images/projects/fleet/finance.png',
-        'assets/images/projects/fleet/reports.png',
-        'assets/images/projects/fleet/events.png'
+        'images/projects/nybble/wb-nybble.png',
+        'images/projects/nybble/dashboard.png',
+        'images/projects/nybble/home.png',
       ]
     },
     {
@@ -151,7 +150,7 @@ export class Home implements OnInit, OnDestroy {
       if (!this.isCarouselPaused) {
         this.nextProject();
       }
-    }, 500);
+    }, 1500);
   }
 
   private stopCarousel(): void {
