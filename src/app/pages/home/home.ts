@@ -56,44 +56,52 @@ export class Home implements OnInit, OnDestroy {
         'images/projects/nybble/wb-nybble.png',
         'images/projects/nybble/dashboard.png',
         'images/projects/nybble/home.png',
+        'images/projects/nybble/fleetlist.png',
+        'images/projects/nybble/cost.png',
       ]
     },
     {
-      name: 'Online Store',
-      description: 'A responsive e-commerce application.',
+      name: 'IoT.nxt Dashboard',
+      description: 'A responsive Fleet Management application.',
       category: 'Web Apps',
-      technologies: ['Angular', 'Tailwind CSS', 'NgRx'],
+      technologies: ['Angular', 'Tailwind CSS', 'NgRx', 'Phython', 'Primeng', 'FastAPI', 'PostgreSQL'],
       images: [
-        'assets/projects/store/home.png',
-        'assets/projects/store/products.png',
-        'assets/projects/store/details.png',
-        'assets/projects/store/cart.png'
+        'images/projects/nxt/nxt1.png',
+        'images/projects/nxt/nxt2.png',
+        'images/projects/nxt/nxt3.png',
+        'images/projects/nxt/finance.png',
+        'images/projects/nxt/events.png',
+        'images/projects/nxt/events.png',
+        'images/projects/nxt/events2.png',
+        'images/projects/nxt/fuel.png',
+        'images/projects/nxt/trans.png',
+        'images/projects/nxt/report.png',
       ]
     },
-    {
-      name: 'Online Store',
-      description: 'A responsive e-commerce application.',
-      category: 'Web Apps',
-      technologies: ['Angular', 'Tailwind CSS', 'NgRx'],
-      images: [
-        'assets/projects/store/home.png',
-        'assets/projects/store/products.png',
-        'assets/projects/store/details.png',
-        'assets/projects/store/cart.png'
-      ]
-    },
-    {
-      name: 'Online Store',
-      description: 'A responsive e-commerce application.',
-      category: 'Web Apps',
-      technologies: ['Angular', 'Tailwind CSS', 'NgRx'],
-      images: [
-        'assets/projects/store/home.png',
-        'assets/projects/store/products.png',
-        'assets/projects/store/details.png',
-        'assets/projects/store/cart.png'
-      ]
-    }
+    // {
+    //   name: 'Online Store',
+    //   description: 'A responsive e-commerce application.',
+    //   category: 'Web Apps',
+    //   technologies: ['Angular', 'Tailwind CSS', 'NgRx'],
+    //   images: [
+    //     'assets/projects/store/home.png',
+    //     'assets/projects/store/products.png',
+    //     'assets/projects/store/details.png',
+    //     'assets/projects/store/cart.png'
+    //   ]
+    // },
+    // {
+    //   name: 'Online Store',
+    //   description: 'A responsive e-commerce application.',
+    //   category: 'Web Apps',
+    //   technologies: ['Angular', 'Tailwind CSS', 'NgRx'],
+    //   images: [
+    //     'assets/projects/store/home.png',
+    //     'assets/projects/store/products.png',
+    //     'assets/projects/store/details.png',
+    //     'assets/projects/store/cart.png'
+    //   ]
+    // }
   ];
 
   get visibleProjects(): Project[] {
